@@ -1,7 +1,7 @@
 Summary:   GTK support library for colord
 Name:      colord-gtk
 Version:   0.1.25
-Release:   1%{?dist}
+Release:   3%{?dist}
 License:   LGPLv2+
 URL:       http://www.freedesktop.org/software/colord/
 Source0:   http://www.freedesktop.org/software/colord/releases/%{name}-%{version}.tar.xz
@@ -73,6 +73,12 @@ find %{buildroot} -name '*.a' -exec rm -f {} ';'
 #%dir %{_datadir}/gtk-doc/html
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 0.1.25-3
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.1.25-2
+- Mass rebuild 2013-12-27
+
 * Tue Mar 19 2013 Richard Hughes <richard@hughsie.com> 0.1.25-1
 - New upstream version.
 - Give the sample widget slightly curved corners and a gray outline
