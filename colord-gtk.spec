@@ -1,7 +1,7 @@
 Summary:   GTK support library for colord
 Name:      colord-gtk
 Version:   0.1.25
-Release:   3%{?dist}
+Release:   4%{?dist}
 License:   LGPLv2+
 URL:       http://www.freedesktop.org/software/colord/
 Source0:   http://www.freedesktop.org/software/colord/releases/%{name}-%{version}.tar.xz
@@ -73,6 +73,10 @@ find %{buildroot} -name '*.a' -exec rm -f {} ';'
 #%dir %{_datadir}/gtk-doc/html
 
 %changelog
+* Tue May 12 2015 Richard Hughes <richard@hughsie.com> 0.1.25-4
+- Rebuild against the latest colord
+- Resolves: #1220479
+
 * Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 0.1.25-3
 - Mass rebuild 2014-01-24
 
